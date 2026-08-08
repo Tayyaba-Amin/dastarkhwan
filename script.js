@@ -39,7 +39,10 @@ const dishes = {
     label: "A little nostalgia"
   }
 };
-
+Object.values(dishes).forEach((dish) => {
+  const img = new Image();
+  img.src = dish.image;
+});
 function updateRecommendation(key) {
   const dish = dishes[key];
 
@@ -49,9 +52,14 @@ function updateRecommendation(key) {
   recommendationTitle.style.opacity = "0";
   recommendationDescription.style.opacity = "0";
 
-  window.setTimeout(() => {
+  const newImage = new Image();
+
+  newImage.src = dish.image;
+
+  newImage.onload = () => {
     recommendationImage.src = dish.image;
     recommendationImage.alt = dish.alt;
+
     recommendationTitle.textContent = dish.name;
     recommendationDescription.textContent = dish.description;
     recommendationHint.textContent = dish.hint;
@@ -60,7 +68,7 @@ function updateRecommendation(key) {
     recommendationImage.style.opacity = "1";
     recommendationTitle.style.opacity = "1";
     recommendationDescription.style.opacity = "1";
-  }, 150);
+  };
 }
 
 moodRows.forEach((row) => {

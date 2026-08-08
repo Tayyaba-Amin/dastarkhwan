@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dastarkhwan — a celebration of Pakistani comfort food and the feeling of home."
+    />
+    <title>Dastarkhwan — A Taste of Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar container">
+        <a href="#home" class="logo">Dastarkhwan<span>.</span></a>
+        <div class="nav-links" id="main-navigation">
+          <a href="#story">Our Story</a>
+          <a href="#discover">Find Your Dish</a>
+        </div>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="main-navigation"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-inner container">
+          <div class="hero-content">
+            <p class="eyebrow">Pakistani comfort food</p>
+            <h1>A taste of <em>home.</em></h1>
+            <p class="hero-description">
+              Some meals fill your stomach. Some meals take you home.
+            </p>
+            <a href="#discover" class="primary-button"
+              >Find your comfort dish <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="hero-visual">
+            <div class="hero-image-wrapper">
+              <img
+                src="assets/hero-image.jpg"
+                alt="A traditional Pakistani biryani feast served on a large platter"
+                class="hero-image"
+              />
+            </div>
+            <div class="hero-caption">
+              <span>01</span>
+              <span>From our dastarkhwan</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <section class="discover" id="discover">
+        <div class="container">
+          <div class="discover-heading">
+            <div class="section-heading">
+              <p class="eyebrow">A little help from the kitchen</p>
+              <h2>What are you <em>craving?</em></h2>
+              <p class="discover-intro">
+                Tell us what kind of comfort you're looking for. We'll point you
+                toward something that feels like home.
+              </p>
+            </div>
+            <span class="section-number" aria-hidden="true">02</span>
+          </div>
+
+          <div class="mood-list">
+            <button
+              class="mood-row"
+              type="button"
+              data-dish="comfort"
+              aria-pressed="false"
+            >
+              <span class="mood-number">01</span>
+              <span class="mood-copy">
+                <strong>Something comforting</strong>
+                <small>For the days when you need a familiar plate.</small>
+              </span>
+              <span class="mood-indicator" aria-hidden="true">+</span>
+            </button>
+            <button
+              class="mood-row"
+              type="button"
+              data-dish="spicy"
+              aria-pressed="false"
+            >
+              <span class="mood-number">02</span>
+              <span class="mood-copy">
+                <strong>Something spicy</strong>
+                <small>For when your comfort needs a little fire.</small>
+              </span>
+              <span class="mood-indicator" aria-hidden="true">+</span>
+            </button>
+            <button
+              class="mood-row"
+              type="button"
+              data-dish="slow"
+              aria-pressed="false"
+            >
+              <span class="mood-number">03</span>
+              <span class="mood-copy">
+                <strong>Something slow-cooked</strong>
+                <small>For meals made patiently, the way home tastes.</small>
+              </span>
+              <span class="mood-indicator" aria-hidden="true">+</span>
+            </button>
+            <button
+              class="mood-row"
+              type="button"
+              data-dish="nostalgic"
+              aria-pressed="false"
+            >
+              <span class="mood-number">04</span>
+              <span class="mood-copy">
+                <strong>Something nostalgic</strong>
+                <small>For a taste that brings an old memory back.</small>
+              </span>
+              <span class="mood-indicator" aria-hidden="true">+</span>
+            </button>
+          </div>
+
+          <div class="recommendation" aria-live="polite">
+            <div class="recommendation-image-wrap">
+              <img
+                class="recommendation-image"
+                src="assets/daal.jpg"
+                alt="Daal Chawal served with rice"
+              />
+              <span class="recommendation-image-label">A taste of home</span>
+            </div>
+            <div class="recommendation-content">
+              <p class="recommendation-label">Your comfort dish</p>
+              <h3>Daal Chawal</h3>
+              <p class="recommendation-description">
+                Simple, humble, and somehow exactly what you needed.
+              </p>
+              <span class="recommendation-hint"
+                >Choose a feeling above to explore</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story" id="story">
+        <div class="story-content">
+          <p class="eyebrow">More than food</p>
+          <h2>Every family<br />has a dish.</h2>
+          <p>
+            The one that appears when guests arrive. The one someone makes when
+            you're sick. The one whose smell reaches you before you even reach
+            the kitchen.
+          </p>
+          <p>
+            Dastarkhwan is a celebration of those meals, those memories, and the
+            feeling of being home.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <p class="logo">Dastarkhwan</p>
+        <p>A taste of home.</p>
+      </div>
+      <p>Made with ❤️ and a little extra spice.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

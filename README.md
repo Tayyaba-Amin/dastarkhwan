@@ -51,8 +51,6 @@ dastarkhwan/
 └── README.md
 ```
 
-*Note: The image filenames above represent the intended structure. Update them if your actual asset filenames differ.*
-
 ## 🚀 Run Locally
 
 1. Clone or download this repository.
